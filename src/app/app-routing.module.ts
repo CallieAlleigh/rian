@@ -15,6 +15,24 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+  
+  {
+    path: 'student',
+    loadChildren: () => import('./student/student.module').then( m => m.StudentPageModule)
+  },
+  {
+    path: 'awards',
+    loadChildren: () => import('./awards/awards.module').then( m => m.AwardsPageModule)
+  },
+  {
+    path: 'fave',
+    loadChildren: () => import('./fave/fave.module').then( m => m.FavePageModule)
+  },
+  {
+    path: 'musics',
+    loadChildren: () => import('./musics/musics.module').then( m => m.MusicsPageModule)
+  },
+
 ];
 
 @NgModule({
