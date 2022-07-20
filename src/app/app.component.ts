@@ -11,4 +11,5 @@ export class AppComponent {
     { title: 'Favorites', url: '/fave', icon: 'heart' },
     { title: 'List of Musics', url: '/musics', icon: 'headset' },
   ];
+  
 }
