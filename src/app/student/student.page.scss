@@ -1,11 +1,6 @@
-body {
-    background: #67B26F;
-    background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  
-    background: linear-gradient(to right, #4ca2cd, #67B26F); 
-    padding: 0;
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-    color: #000;
+ion-content{
+ --background: rgb(238, 39, 39);
+
 }
 .student-profile .card {
     border-radius: 10px;
@@ -15,7 +10,7 @@ body {
     height: 150px;
     object-fit: cover;
     margin: 10px auto;
-    border: 10px solid rgb(243, 236, 236);
+    border: 10px solid rgb(68, 55, 55);
     border-radius: 50%;
 }
 .student-profile .card h3 {

@@ -11,6 +11,7 @@ export class AppComponent {
     { title: 'Volleyball Awards', url: '/awards', icon: 'medal' },
     { title: 'Favorites', url: '/fave', icon: 'heart' },
     { title: 'List of Musics', url: '/musics', icon: 'headset' },
+    { title: 'Friends', url: '/friends', icon: 'people' },
   ];
   
 }
