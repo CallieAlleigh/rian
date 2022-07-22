@@ -7,29 +7,14 @@
           <ion-list-header>Callie Alleigh</ion-list-header>
           <ion-note>calliealleigh@gmail.com</ion-note>
         </ion-list>
-        <ion-item>
-          <ion-icon name="id-card" slot="start"></ion-icon>
-          <ion-label>Student Information</ion-label>
-          
-        </ion-item>
-        
-        <ion-item>
-          <ion-icon name="list" slot="start"></ion-icon>
-          <ion-label>Volleyball & Academic Awards</ion-label>
-          
-        </ion-item>
   
-        <ion-item>
-          <ion-icon name="list" slot="start"></ion-icon>
-          <ion-label>Kpop Groups</ion-label>
-          
-        </ion-item>
-        <ion-item>
-          <ion-icon name="headset" slot="start"></ion-icon>
-          <ion-label>List of Music</ion-label>
-          
-        </ion-item>
-    
+
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
   
       </ion-content>
     </ion-menu>
